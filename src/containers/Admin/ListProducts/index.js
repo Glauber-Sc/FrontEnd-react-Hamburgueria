@@ -7,26 +7,17 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Switch } from "react";
 import { useHistory } from "react-router-dom";
 
 import paths from "../../../constants/paths";
 import api from "../../../services/api";
 import formatCurrency from "../../../utils/formatCurrency";
 import { Container, Img, EditIconStyles } from "./styles";
-import { InputSwitch } from "primereact/inputswitch";
-import Switch from "@mui/material/Switch";
 
 function ListProducts() {
   const [products, setProducts] = useState();
   const { push } = useHistory();
-
-  //METODO SWITCH
-  const [checked, setChecked] = React.useState(true);
-
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
 
   // Carregando todos os produtos
   useEffect(() => {
@@ -63,7 +54,6 @@ function ListProducts() {
               <TableCell align="center">Produto em Oferta</TableCell>
               <TableCell align="center">Imagem do Produto</TableCell>
               <TableCell>Editar</TableCell>
-              <TableCell>Desabilitar</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -77,6 +67,8 @@ function ListProducts() {
                     },
                   }}
                 >
+                  {/* ADICIONAR UM SWITCH */}
+
                   <TableCell component="th" scope="row">
                     {product.name}
                   </TableCell>
@@ -87,15 +79,6 @@ function ListProducts() {
                   </TableCell>
                   <TableCell>
                     <EditIconStyles onClick={() => EditProduct(product)} />
-                  </TableCell>
-                  <TableCell>
-                    <Switch
-                      defaultChecked
-                      align="center"
-                       checked={checked}
-                       onChange={handleChange}
-                       name="switch"
-                    ></Switch>
                   </TableCell>
                 </TableRow>
               ))}

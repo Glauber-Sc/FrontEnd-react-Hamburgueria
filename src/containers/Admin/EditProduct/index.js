@@ -1,4 +1,3 @@
-/* Componente de edição de produto */
 import { yupResolver } from '@hookform/resolvers/yup'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload'
 import React, { useEffect, useState } from 'react'
@@ -16,7 +15,8 @@ import {
     Input,
     ButtonStyles,
     LabelUpload,
-    ContainerInput
+    ContainerInput,
+    DeleteButtonStyles
 } from './styles'
 
 function EditProduct() {
@@ -69,6 +69,17 @@ function EditProduct() {
             push('/listar-produtos')
         }, 2000)
     }
+
+    // Excluir o produto
+    const handleDelete = async () => {
+        await toast.promise(api.delete(`products/${product.id}`), {
+            pending: 'Excluindo produto...',
+            success: 'Produto excluído com sucesso',
+            error: 'Falha ao excluir produto'
+        });
+
+        push('/listar-produtos');
+    };
 
     // Carregando o select com as categorias
     useEffect(() => {
@@ -157,6 +168,7 @@ function EditProduct() {
                 </ContainerInput>
 
                 <ButtonStyles>Editar produto</ButtonStyles>
+                <ButtonStyles onClick={handleDelete}>Excluir produto</ButtonStyles>
             </form>
         </Container>
     )
