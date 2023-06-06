@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     background: #ffffff;
-    box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
-    border-radius: 30px;
+    
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     padding: 16px;
-    width: max-content;
+    width: 90vw;
 
     div {
         display: flex;
@@ -15,36 +15,34 @@ export const Container = styled.div`
         justify-content: space-between;
     }
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        padding: 12px;
-        border-radius: 20px;
-
-        div {
-            margin-top: 12px;
-        }
-    }
+   
 `
+
+
+export const ProductDescription = styled.p`
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+`;
 
 export const Image = styled.img`
     width: 150px;
     height: 150px;
     border-radius: 15px;
 
-    @media (max-width: 768px) {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-    }
+   
 `
 
 export const ProductName = styled.p`
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
     color: #000000;
+    font-weight: 500;
 
     @media (max-width: 768px) {
         text-align: center;
@@ -64,3 +62,6 @@ export const ProductPrice = styled.p`
         margin-top: 12px;
     }
 `
+
+
+

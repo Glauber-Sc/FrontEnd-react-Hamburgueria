@@ -14,11 +14,6 @@ export const CategoryMenu = styled.div`
     justify-content: center;
     gap: 50px;
     margin-top: 20px;
-
-    @media (max-width: 768px) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 `
 
 export const CategoryButton = styled.button`
@@ -31,21 +26,19 @@ export const CategoryButton = styled.button`
     font-size: 17px;
     line-height: 20px;
     padding-bottom: 5px;
-
-    @media (max-width: 768px) {
-        margin-bottom: 10px;
-    }
 `
 
 export const ProductsContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 40px;
     justify-items: center;
     margin-top: 20px;
 
+    
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 25px;
     }
+
 `
