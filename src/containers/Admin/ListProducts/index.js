@@ -95,7 +95,6 @@ function ListProducts() {
                        checked={checked}
                        onChange={handleChange}
                        name="switch"
-                       inputProps={{"aria-label" : "test switch"}}
                     ></Switch>
                   </TableCell>
                 </TableRow>
