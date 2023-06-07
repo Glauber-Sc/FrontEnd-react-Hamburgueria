@@ -53,7 +53,8 @@ function ListProducts() {
               <TableCell>Preço</TableCell>
               <TableCell align="center">Produto em Oferta</TableCell>
               <TableCell align="center">Imagem do Produto</TableCell>
-              <TableCell>Editar</TableCell>
+              <TableCell align="center"
+              >Editar/Deletar</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -77,7 +78,7 @@ function ListProducts() {
                   <TableCell align="center">
                     <Img src={product.url} alt="imagem-produto" />
                   </TableCell>
-                  <TableCell>
+                  <TableCell align="center">
                     <EditIconStyles onClick={() => EditProduct(product)} />
                   </TableCell>
                 </TableRow>

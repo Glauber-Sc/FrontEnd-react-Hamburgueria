@@ -18,7 +18,7 @@ export function FooterComponent() {
                 <WhatsAppIcon className="icon" />
             </Socials>
             <hr />
-            <Copy>&copy; 2022 CodeBurger</Copy>
+            <Copy>&copy; 2023 MadrugasBurgue</Copy>
         </FooterContainer>
     )
 }

@@ -38,7 +38,7 @@ export const Input = styled.input`
 
 export const ButtonStyles = styled(Button)`
     width: 100%;
-    margin-top: 25px;
+   
 `
 export const LabelUpload = styled.label`
     cursor: pointer;
