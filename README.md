@@ -1,15 +1,14 @@
 <h1 align="center">
-    <img width="250px" src="./src/assets/logo-Codeburger.png" alt="logo-codeburger">
+    <img width="250px" src="./src/assets/Logo_madruga_burguer.png" alt="logo-madruga">
 </h1>
 
 > ## 💻 Projeto
-<p>CodeBurger é um sistema para lanchonete, que permite aos usuários se cadastrar, fazer pedidos e adicionar ao carrinho.</p>
+<p>Madruga Burgue é um sistema para lanchonete, que permite aos usuários se cadastrar, fazer pedidos e adicionar ao carrinho.</p>
 <p>Tambem é possivel fazer login como adiministrador e ver os pedidos que foram realizados, ver a lista de produtos, adicionar e editar novos produtos.</p>
-<p>Todos os usuários cadastrados, os produtos e os pedidos realizados, ficam gravados no banco de dados. Para ver a api <a href="https://github.com/W-Carlos/CodeBurger-api">clique aqui</a>.</p>
+<p>Todos os usuários cadastrados, os produtos e os pedidos realizados, ficam gravados no banco de dados. Para ver a api <a href="https://github.com/Glauber-Sc">clique aqui</a>.</p>
 
 > ## 📸 Demo
-<img src="./src/assets/CodeBurger-demo1.gif">
-<img src="./src/assets/CodeBurger-demo2.gif">
+
 
 > ## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -26,8 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 * [Axios](https://www.npmjs.com/package/axios)
 * [yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 * [Yup](https://www.npmjs.com/package/yup)
-* [Prettier](https://prettier.io/)
-* [ESLint](https://eslint.org/)
+
 
 >## Pré-requisitos
 
@@ -57,8 +55,7 @@ $ yarn start
 #A página será recarregada se você fizer edições.Você também verá quaisquer erros no console.
 ```
 
->## 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/W-Carlos/code-burger/blob/master/LICENSE.md">LICENSE</a> para mais detalhes.
+>## 📄 PRODIÇÃO
 
 ---
-<p align="center">Feito por Glauber Santiago 👋</p>
+<p align="center">Feito por Glauber Santiago, Talita Gonçalves 👋</p>

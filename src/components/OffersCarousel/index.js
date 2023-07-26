@@ -52,14 +52,41 @@ export function OffersCarousel() {
         { width: 1300, itemsToShow: 5 }
     ]
 
+    
+  const renderPaginationDot = (onClick, index, isActive) => {
+    return (
+      <button
+        onClick={onClick}
+        className={`custom-pagination-dot ${isActive ? 'active' : ''}`}
+      />
+    );
+  };
+
     return (
         <Container>
             <CategoryImage src={Offers} alt="seção de ofertas" />
             <Carousel
-                itemsToShow={5}
-                style={{ width: '90%' }}
-                breakPoints={breakPoints}
-            >
+                 itemsToShow={5}
+                 style={{ width: "90%" }}
+                 breakPoints={breakPoints}
+                 renderPagination={({ pages, activePage, onClick }) => (
+                   <ul className="custom-pagination">
+                     {pages.map((page) => {
+                       const isActive = page === activePage;
+                       return (
+                         <li
+                           key={page}
+                           className={`custom-pagination-item ${
+                             isActive ? "active" : ""
+                           }`}
+                           onClick={() => onClick(page)}
+                         />
+                       );
+                     })}
+                   </ul>
+                 )}
+                 paginationDotRender={renderPaginationDot}
+               >
                 {offers &&
                     offers.map(product => (
                         <ContainerItems key={product.id}>

@@ -13,6 +13,7 @@ import status from './order-status'
 import Row from './row'
 import { Container, Menu, LinkMenu } from './styles'
 
+
 function Orders() {
     const [orders, setOrders] = useState([])
     const [filteredOrders, setFilteredOrders] = useState([])
@@ -37,7 +38,8 @@ function Orders() {
             orderId: order._id,
             date: formatDate(order.createdAt),
             status: order.status,
-            products: order.products
+            products: order.products,
+            description : order.description
         }
     }
 
@@ -101,8 +103,12 @@ function Orders() {
                                 Data do Pedido
                             </TableCell>
                             <TableCell style={{ color: 'white' }}>
+                                Endereço
+                                </TableCell>
+                            <TableCell style={{ color: 'white' }}>
                                 Status
                             </TableCell>
+                          
                         </TableRow>
                     </TableHead>
                     <TableBody>

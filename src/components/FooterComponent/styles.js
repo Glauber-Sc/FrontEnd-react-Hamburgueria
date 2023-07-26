@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #e5e5e5;
+    background: #000;
     padding: 0 110px;
 
     hr {
@@ -15,7 +15,8 @@ export const FooterContainer = styled.footer`
 
 export const ImageLogo = styled.img`
     margin-top: 50px;
-    width: 300px;
+    width: 200px;
+
 `
 
 export const P = styled.p`
@@ -26,26 +27,28 @@ export const P = styled.p`
     font-size: 16px;
     line-height: 19px;
 
-    color: #000000;
+    color: #fff;
 `
 
 export const Socials = styled.div`
     display: flex;
     gap: 10px;
-    cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
 
     .icon {
         font-size: 35px;
-        transition: 0.5s;
+      
+        color: #fff
     }
 
     .icon:hover {
-        color: #9758a6;
+        color: #F0C137;
         transition: ease-in-out 0.5s;
     }
 `
 
 export const Copy = styled.p`
     margin: 30px 0;
+    color: #fff;
 `

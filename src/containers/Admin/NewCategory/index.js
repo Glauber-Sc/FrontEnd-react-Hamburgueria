@@ -5,12 +5,14 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
-
+import { useHistory } from 'react-router-dom'
 import { ErrorMessage } from '../../../components'
 import api from '../../../services/api'
 import { Container, Label, Input, ButtonStyles, LabelUpload } from './styles'
 
 function NewCategory() {
+
+  const { push } = useHistory()
   // Variavel que armazena nome da imagem carregada
   const [fileName, setFileName] = useState(null)
 
@@ -46,6 +48,9 @@ function NewCategory() {
       success: 'Categoria criada com sucesso',
       error: 'Falha ao criar a categoria'
     })
+  
+    push('/categorias'); // Redireciona para a página anterior
+  
   }
 
   return (
@@ -84,5 +89,4 @@ function NewCategory() {
     </Container>
   )
 }
-
 export default NewCategory

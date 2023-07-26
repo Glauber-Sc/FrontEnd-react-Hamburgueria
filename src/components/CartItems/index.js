@@ -14,7 +14,7 @@ export function CartItems() {
                 <p></p>
                 <p>Itens</p>
                 <p>Preço</p>
-                <p style={{ paddingRight: 30 }}>Quantidade</p>
+                <p style={{ paddingRight: 5 }}>Quant.</p>
                 <p>Total</p>
             </Header>
 

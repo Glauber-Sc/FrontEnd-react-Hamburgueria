@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CartLogo from '../../assets/cart-products.svg'
+import CartLogo from '../../assets/logo-home.jpeg'
 import {
     CartItems,
     CartResume,

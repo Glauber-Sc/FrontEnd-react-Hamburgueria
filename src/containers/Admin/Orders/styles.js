@@ -30,6 +30,6 @@ export const LinkMenu = styled.a`
     cursor: pointer;
     font-weight: ${props => (props.isActiveStatus ? 'bold' : '400')};
     border-bottom: ${props =>
-        props.isActiveStatus ? '2px solid #9758A6' : 'none'};
+        props.isActiveStatus ? '2px solid #F0C137' : 'none'};
     padding-bottom: 5px;
 `

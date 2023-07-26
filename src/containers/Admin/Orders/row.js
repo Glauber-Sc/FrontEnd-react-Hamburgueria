@@ -37,6 +37,15 @@ function Row({ row, setOrders, orders }) {
         }
     }
 
+    // Função para calcular o valor total do pedido
+    function calculateTotal(products) {
+        const productTotal = products.reduce((total, product) => {
+            return total + product.quantity * product.price
+        }, 0)
+
+        return productTotal + 5 // Adicionar o valor fixo do frete (5 reais)
+    }
+
     return (
         <React.Fragment>
             <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
@@ -58,6 +67,7 @@ function Row({ row, setOrders, orders }) {
                 </TableCell>
                 <TableCell>{row.name}</TableCell>
                 <TableCell>{row.date}</TableCell>
+                <TableCell>{row.description}</TableCell>
                 <TableCell>
                     <ReactSelectStyle
                         options={status.filter(sts => sts.value !== 'Todos')}
@@ -123,6 +133,9 @@ function Row({ row, setOrders, orders }) {
                                     ))}
                                 </TableBody>
                             </Table>
+                            <Typography variant="subtitle1" gutterBottom>
+                                Total: R$ {calculateTotal(row.products)}
+                            </Typography>
                         </Box>
                     </Collapse>
                 </TableCell>

@@ -10,16 +10,16 @@ export const Container = styled.div`
     padding: 35px 0;
 
     .rec.rec-arrow {
-        background-color: #9758a6;
+        background-color: #F0C137;
         color: #efefef;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border: none;
     }
 
     .rec.rec-arrow:hover {
-        border: 2px solid #9758a6;
+        border: 2px solid #F0C137;
         background-color: #efefef;
-        color: #9758a6;
+        color: #F0C137;
     }
 
     .rec.rec-arrow:disabled {
@@ -27,6 +27,26 @@ export const Container = styled.div`
         background-color: #bebebf;
         color: #efefef;
     }
+
+    .custom-pagination {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      
+      .custom-pagination-item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 5px;
+        background-color: gray; /* Cor do bullet inativo */
+        cursor: pointer;
+      }
+      
+      .custom-pagination-item.active {
+        background-color: #F0C137; /* Cor do bullet ativo */
+      }
 `
 
 export const CategoryImage = styled.img``
@@ -43,7 +63,7 @@ export const Image = styled.img`
 `
 
 export const Button = styled(Link)`
-    background: #9758a6;
+    background: #F0C137;
     border-radius: 8px;
     border: none;
     height: 50px;

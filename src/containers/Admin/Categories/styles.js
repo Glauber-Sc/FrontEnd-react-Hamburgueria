@@ -23,7 +23,7 @@ export const NewCategory = styled.button`
 
   width: 11.426rem;
   height: 2.258rem;
-  background: #9758a6;
+  background: #F0C137;
   border: none;
   border-radius: 0.5rem;
 

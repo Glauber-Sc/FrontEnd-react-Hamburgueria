@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import React from 'react'
 
-import BurgerLogo from '../../assets/burger-logo.svg'
+import BurgerLogo from '../../assets/Logo_madruga_burguer.png'
 import { FooterContainer, ImageLogo, P, Socials, Copy } from './styles'
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ export function FooterComponent() {
                 <WhatsAppIcon className="icon" />
             </Socials>
             <hr />
-            <Copy>&copy; 2023 MadrugasBurgue</Copy>
+            <Copy>&copy; 2023 MadrugaBurguer</Copy>
         </FooterContainer>
     )
 }

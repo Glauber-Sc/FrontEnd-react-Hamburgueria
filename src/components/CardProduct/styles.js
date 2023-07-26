@@ -5,7 +5,7 @@ export const Container = styled.div`
     border-radius: 10px;
     display: flex;
     gap: 12px;
-    padding: 16px;
+    padding: 15px;
     width: 90vw;
 
     div {
@@ -38,14 +38,14 @@ export const Image = styled.img`
 export const ProductName = styled.p`
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 19px;
     color: #000000;
     font-weight: 500;
 
     @media (max-width: 768px) {
-        text-align: center;
         margin-top: 12px;
+        padding:5px;
     }
 `
 

@@ -21,6 +21,7 @@ export const Header = styled.div`
     p {
         font-size: 20px;
         color: #b5b5b5;
+        margin-left: 10px;
     }
 `
 
@@ -33,18 +34,22 @@ export const Body = styled.div`
 
     img {
         border-radius: 10px;
-        width: 100px;
+        width: 70px;
+        
     }
 
     p {
-        font-size: 10px;
+        font-size: 13px;
         color: #000000;
         width: 20px;
+        margin-left: 10px;
+      
     }
 
     .quantity-container {
         display: flex;
-        gap: 20px;
+        gap: 5px;
+        margin-left: 10px;
 
         button {
             height: 10px;
@@ -52,10 +57,12 @@ export const Body = styled.div`
             border: none;
             font-size: 24px;
             cursor: pointer;
+           
         }
 
         p {
             margin-top: 5px;
+            margin-left: 10px;
         }
         
     }

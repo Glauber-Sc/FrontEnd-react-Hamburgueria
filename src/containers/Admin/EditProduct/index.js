@@ -124,7 +124,7 @@ function EditProduct() {
             as="textarea"
             type="text"
             {...register("description")}
-            defaultValue={product.de}
+            defaultValue={product.description}
           />
           <ErrorMessage>{errors.description?.message}</ErrorMessage>
         </div>

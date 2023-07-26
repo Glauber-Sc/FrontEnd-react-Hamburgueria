@@ -5,6 +5,8 @@ import ProductsLogo from '../../assets/products-logo.svg'
 import { CardProduct } from '../../components'
 import api from '../../services/api'
 import formatCurrency from '../../utils/formatCurrency'
+import LogoHome from '../../assets/logo-home.jpeg'
+
 import {
     Container,
     ProductsImage,
@@ -85,7 +87,7 @@ export function Products({ location: { state } }) {
 
     return (
         <Container>
-            <ProductsImage src={ProductsLogo} alt="Imagem de um hamburguer" />
+            <ProductsImage src={LogoHome} alt="Imagem de um hamburguer" />
 
             <CategoryMenu>
                 {categories &&
